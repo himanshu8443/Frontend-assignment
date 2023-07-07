@@ -101,12 +101,14 @@ html {
 }
 
 .hero_heading {
+  text-shadow: #1f1f1f 0px 0px 2px ;
   font-size: 35px;
   color: #343d68;
   font-weight: 500;
 }
 
 .sub_heading {
+  text-shadow: #1f1f1f 0px 0px 1px ;
   font-size: 45px;
   line-height: 45px;
 }
@@ -155,13 +157,14 @@ html {
 }
 
 .faded-text {
+  text-shadow: #1f1f1f 0px 1px 0px ;
   position: absolute;
   user-select: none;
   font-size: 7em;
   color: rgb(231, 231, 231);
 
   bottom: -16%;
-  left: -5%;
+  left: -1%;
   font-weight: bold;
   transition: all 3s;
 }
@@ -579,6 +582,7 @@ html {
 }
 
 .heading {
+  text-shadow: #1f1f1f 0px 0px 3px ;
   font-size: 50px;
   margin-bottom: 30px;
   font-style: bold;
@@ -607,9 +611,10 @@ html {
   font-size: 100px;
   font-style: bold;
   font-weight: 700;
+  text-shadow: #1f1f1f 0px 0px 10px ;
   color: rgb(231, 231, 231);
   top: -46%;
-  right: -66%;
+  right: -35%;
   user-select: none;
 }
 
@@ -898,4 +903,66 @@ ul li a:hover::after {
     }
   }
 
+}
+
+
+
+/* stats */
+.stats {
+  background-color: #d02b2b;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.section-title {
+  text-shadow: #1f1f1f 0px 0px 10px ;
+  font-size: 50px;
+  margin-top: 0;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.stat {
+  margin: 0 30px;
+}
+
+.stat-value {
+  text-shadow: #b4b4b4 0px 0px 1px ;
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+}
+
+.stat-label {
+  text-shadow: #1f1f1f 0px 0px 2px ;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-title {
+    font-size: 30px;
+  }
+  .sk-txt{
+    top: -59%;
+    font-size: 40px;
+  }
+  .faded-text{
+    font-size: 80px;
+  }
+  
+  .stat {
+    margin-bottom: 20px;
+  }
 }
